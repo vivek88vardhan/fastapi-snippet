@@ -3,7 +3,10 @@ from fastapi import APIRouter
 # from app.api.routes import authentication, comments, profiles, tags, users
 # from app.api.routes.articles import api as articles
 
+from src.api.routes.customers import api as customers
+
 router = APIRouter()
+router.include_router(customers.router, tags=["customers"])
 """
 router.include_router(authentication.router, tags=["authentication"], prefix="/users")
 router.include_router(users.router, tags=["users"], prefix="/user")
