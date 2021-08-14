@@ -8,7 +8,7 @@ sudo apt install python3-virtualenv
 virtualenv venv
 
 ## Activating virtualenv on Linux Ubuntu /macOS
-source venv/bin/active
+source venv/bin/activate
 
 ## Activate virtualenv on Windows 10
 .\venv\Scripts\activate
