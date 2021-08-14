@@ -15,3 +15,6 @@ source venv/bin/active
 
 ## Installing Python dependencies
 pip3 install -r requirements.txt
+
+## Running app as Service
+uvicorn main:app --reload
