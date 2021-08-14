@@ -2,7 +2,7 @@ import asyncpg
 from fastapi import FastAPI
 from loguru import logger
 
-from app.core.config import DATABASE_URL, MAX_CONNECTIONS_COUNT, MIN_CONNECTIONS_COUNT
+from src.core.config import DATABASE_URL, MAX_CONNECTIONS_COUNT, MIN_CONNECTIONS_COUNT
 
 
 async def connect_to_db(app: FastAPI) -> None:
