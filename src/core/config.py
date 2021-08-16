@@ -13,6 +13,7 @@ API_PREFIX = "/api"
 
 JWT_TOKEN_PREFIX = "Token"  # noqa: S105
 VERSION = "0.0.0"
+API_VERSION = "v1.0"
 
 config = Config(".env")
 

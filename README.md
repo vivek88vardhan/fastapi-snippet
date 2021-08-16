@@ -17,4 +17,4 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 
 ## Running app as Service
-uvicorn main:app --reload
+uvicorn src.main:app --reload --port 5000
