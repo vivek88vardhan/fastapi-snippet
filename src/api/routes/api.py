@@ -4,13 +4,11 @@ from fastapi import APIRouter
 # from app.api.routes.articles import api as articles
 
 from src.api.routes.customers import api as customers
-from src.api.routes.authentication import api as authentication
 from src.api.routes.graphql import api as graphql
 from src.core.config import API_VERSION
 
 router = APIRouter()
 router.include_router(customers.router, tags=["Customers"], prefix="/"+API_VERSION)
-router.include_router(authentication.router, tags=["Authentication"], prefix="/"+API_VERSION)
 router.include_router(graphql.router, tags=["GraphQL"], prefix="/"+API_VERSION)
 
 """
