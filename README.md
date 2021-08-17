@@ -1,5 +1,12 @@
 # fastapi-snippet
 
+## Install python
+sudo apt install python3.8
+
+## Install pip
+sudo apt-get update
+sudo apt-get -y install python3-pip
+
 ## Freeze all pip3 installations
 pip3 freeze > requirements.txt
 
