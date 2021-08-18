@@ -43,6 +43,7 @@ sys.path.append(os.getcwd())
 app = get_application()
 
 """
+some text changes
 def main(args):
     try:
         logger = setLogger('FASTAPI',args.log)
