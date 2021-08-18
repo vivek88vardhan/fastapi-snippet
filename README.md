@@ -22,6 +22,6 @@ source venv/bin/activate
 
 ## Installing Python dependencies
 pip3 install -r requirements.txt
-
+pip install -r requirements.txt
 ## Running app as Service
 uvicorn src.main:app --reload --port 5000
